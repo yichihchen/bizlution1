@@ -1,0 +1,11 @@
+@import "../../node_modules/bootstrap/scss/functions";   //BS5環境架立後加上去的
+@import './utils/variables';   //BS5環境架立後加上去的
+
+
+@import './layout/header.scss';   
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+
+@import "../../node_modules/bootstrap";  //BS5環境架立後加上去的

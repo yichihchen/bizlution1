@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+<div class="wrap d-flex">
+
+  <!-- accordion -->
+<div class="accrodion-wrap" style="width:25%">
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <strong>This is the first item</strong>1234
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>This is the second item</strong> 2234
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>This is the third item'.</strong> 3234
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Table -->
+
+<div class="" style="width:73%">
+  <table class="table">
+    <button type="button" class="add-button btn btn-secondary position-relative">新增</button>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">GPIO點位</th>
+        <th scope="col">狀態</th>
+        <th scope="col">群組識別碼</th>
+        <th scope="col">檔案名稱</th>
+        <th scope="col">播放時間</th>
+        <th scope="col">優先權</th>
+        <th scope="col">方向</th>
+        <th scope="col">刪除</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td>@mdo</td>
+        <td>@mdo</td>
+        <td>@mdo</td>
+        <td>@mdo</td>
+        <td><button type="button" class="btn btn-danger">刪除</button></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>@fat</td>
+        <td>@fat</td>
+        <td>@fat</td>
+        <td>@fat</td>
+        <td><button type="button" class="btn btn-danger">刪除</button></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td >Larry the Bird</td>
+        <td>@twitter</td>
+        <td>@twitter</td>
+        <td>@twitter</td>
+        <td>@twitter</td>
+        <td>@twitter</td>
+        <td>@twitter</td>
+        <td><button type="button" class="btn btn-danger">刪除</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagination">
+  <p>顯示第1至第5項結果，共5項</p>
+  <!--Pagination  -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+  <!--Pagination End  -->
+</div>
+</div>
+
+<!-- Table End-->
+
+
+
+
+
+</div>
+
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
